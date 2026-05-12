@@ -1,56 +1,123 @@
-# Welcome to your Expo app 👋
+# 📝 Notes App - React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A clean and responsive Notes App built using React Native.  
+This project focuses on modern UI design, responsive layouts, dark/light mode support, and smooth note browsing experience.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 📒 View notes in card layout
+- 🔍 Search notes by title or content
+- 🌗 Dark / Light theme toggle
+- 📱 Responsive layout using `useWindowDimensions`
+- 🖼 Custom header background images
+- 📝 Open and view full notes
+- ⚡ Optimized rendering using `FlatList`
+- 🎨 Modern minimal UI
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠 Tech Stack
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- JavaScript
+- React Native Safe Area Context
+- Lucide React Native Icons
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📂 Folder Structure
 
-## Get a fresh project
+```txt
+assets/
+ └── images/
+      ├── noteBgDark.png
+      ├── noteBgLight.png
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+app/
+ └── index.jsx
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+## 🚀 Installation
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Clone the repository:
 
-## Learn more
+```bash
+git clone <your-repo-url>
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm install
+```
 
-## Join the community
+Start the development server:
 
-Join our community of developers creating universal apps.
+```bash
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 🎨 Theme System
+
+The app supports dynamic theme switching using:
+
+```js
+useColorScheme()
+```
+
+Custom theme colors are managed through:
+
+```js
+themeColorsData
+```
+
+---
+
+## 📱 Responsive Design
+
+Responsive layouts are implemented using:
+
+```js
+useWindowDimensions()
+```
+
+Features include:
+
+- Landscape support
+- Tablet optimization
+- Dynamic image ratios
+- Adaptive layouts
+
+---
+
+## 📋 Current Limitations
+
+- No persistent storage yet
+- Notes are currently static data
+- Create/Edit/Delete features are not fully implemented
+
+---
+
+## 🔮 Future Improvements
+
+- AsyncStorage / SQLite integration
+- Add new notes
+- Edit existing notes
+- Delete notes
+- Categories & tags
+- Markdown support
+- Rich text editor
+- Cloud sync
+
+---
+
+## 👨‍💻 Author
+
+Built by Deepak A Poojary using React Native & Expo.
